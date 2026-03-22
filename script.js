@@ -38,6 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
         SE.introBGM();       // cinematic score starts on first touch
         audioUnlocked = true;
         if (introTap) introTap.classList.add('tapped');
+        runIntro();          // perfectly sync the intro animation with audio
     }
 
     ['pointerdown', 'touchstart', 'keydown'].forEach(evt =>
@@ -45,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
     );
 
     /* ================================================================
-       1. CINEMATIC INTRO  (visuals only at t=0, audio on first tap)
+       1. CINEMATIC INTRO  (visuals and audio perfectly synced on first tap)
        ================================================================ */
     const intro = document.getElementById('intro');
     const introFirst = document.getElementById('introFirst');
@@ -84,8 +85,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 1000);
         }, 5000);
     }
-
-    runIntro();
 
     /* ================================================================
        2. REVEAL OBSERVER  (fade-up on scroll)
