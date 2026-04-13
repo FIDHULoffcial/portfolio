@@ -1,0 +1,781 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fidhul Krishna â€” Embedded Systems Engineer</title>
+    <meta name="description" content="Portfolio of Fidhul Krishna â€” Embedded Systems Engineer, IoT firmware developer, and co-founder of Zorift. Based in Kerala, India.">
+    <meta name="keywords" content="Fidhul Krishna, ESP32, BLE, IoT, embedded systems, firmware, Kerala, Zorift, NimBLE, OpenCV, robotics">
+    <meta name="author" content="Fidhul Krishna">
+    <meta property="og:title" content="Fidhul Krishna â€” Embedded Systems Engineer">
+    <meta property="og:description" content="Embedded systems engineer and co-founder of Zorift. Building hardware-software architectures from BLE firmware to computer vision.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fidhulkrishna.dev">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• INTRO â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<div class="intro" id="intro" aria-live="polite" aria-label="Loading portfolio">
+    <div class="intro-inner">
+        <div class="intro-name-block">
+            <span class="intro-first" id="introFirst">FIDHUL</span>
+            <span class="intro-last" id="introLast">KRISHNA</span>
+        </div>
+        <div class="intro-rule" id="introRule"></div>
+        <p class="intro-sub" id="introSub">EMBEDDED SYSTEMS ENGINEER&nbsp;&nbsp;Â·&nbsp;&nbsp;FOUNDER</p>
+        <div class="intro-dots" id="introDots" aria-hidden="true">
+            <span class="intro-sq"></span>
+            <span class="intro-sq"></span>
+            <span class="intro-sq"></span>
+        </div>
+    </div>
+    <div class="intro-tap" id="introTap" aria-hidden="true">
+        <span class="tap-dot"></span>
+        <span>TAP ANYWHERE TO START</span>
+    </div>
+    <span class="intro-ver" aria-hidden="true">v4.0 // 2026</span>
+</div>
+
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• NAVBAR â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<header class="navbar" id="navbar" role="banner">
+    <nav class="nav-inner wrap" aria-label="Main navigation">
+        <a href="#hero" class="nav-logo" aria-label="Fidhul Krishna â€” Home">&lt;FK/&gt;</a>
+        <ul class="nav-links" role="list">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#timeline" class="nav-link">Timeline</a></li>
+            <li><a href="#achievements" class="nav-link">Recognition</a></li>
+            <li><a href="#ventures" class="nav-link">Ventures</a></li>
+            <li><a href="#github" class="nav-link">GitHub</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-right nav-actions">
+            <button class="nav-sound" id="navSound" aria-label="Mute sound">
+                <i class="fas fa-volume-up" id="soundIcon"></i>
+            </button>
+            <button class="nav-hamburger" id="navHamburger" aria-label="Open menu" aria-expanded="false" aria-controls="navOverlay">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+</header>
+
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• MOBILE OVERLAY â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<div class="nav-overlay" id="navOverlay" aria-hidden="true" role="dialog" aria-label="Navigation menu">
+    <button class="nav-overlay-close" id="navOverlayClose" aria-label="Close menu"><i class="fas fa-times"></i></button>
+    <ul class="nav-overlay-links" role="list">
+        <li><a href="#about" class="nav-overlay-link">About</a></li>
+        <li><a href="#projects" class="nav-overlay-link">Projects</a></li>
+        <li><a href="#skills" class="nav-overlay-link">Skills</a></li>
+        <li><a href="#timeline" class="nav-overlay-link">Timeline</a></li>
+        <li><a href="#achievements" class="nav-overlay-link">Recognition</a></li>
+        <li><a href="#ventures" class="nav-overlay-link">Ventures</a></li>
+        <li><a href="#github" class="nav-overlay-link">GitHub</a></li>
+        <li><a href="#contact" class="nav-overlay-link">Contact</a></li>
+    </ul>
+    <div class="overlay-socials">
+        <a href="https://github.com/FIDHULofficial" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://youtube.com/@fidhul_offcial" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.instagram.com/FIDHUL_KRISHNA/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://linkedin.com/in/fidhul-krishna" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    </div>
+</div>
+
+<main>
+
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• HERO â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<section class="hero" id="hero" aria-labelledby="hero-heading">
+    <!-- Background layers -->
+    <div aria-hidden="true">
+        <div class="h-dots"></div>
+        <div class="h-glow"></div>
+    </div>
+
+    <!-- HUD corners -->
+    <div class="hud-tl" aria-hidden="true"><span class="hud-bracket hud-bracket-tl"></span><span class="hud-text">SYS_ONLINE</span></div>
+    <div class="hud-tr" aria-hidden="true"><span class="hud-text">VER 4.0.0 // 2026</span><span class="hud-bracket hud-bracket-tr"></span></div>
+    <div class="hud-br" aria-hidden="true"><span class="hud-coords">10.8505Â° N&nbsp;Â·&nbsp;76.2711Â° E</span></div>
+
+    <!-- Main content -->
+    <div class="hero-content">
+        <div class="h-badge reveal" role="status">
+            <span class="h-dot-blink" aria-hidden="true"></span>
+            <span>Available for collaboration</span>
+            <span class="h-badge-sep" aria-hidden="true">Â·</span>
+            <span>Kerala, India</span>
+        </div>
+
+        <h1 class="h-name" id="hero-heading">
+            <span class="h-name-1">Fidhul</span>
+            <span class="h-name-2">Krishna</span>
+        </h1>
+
+        <div class="h-rule reveal" aria-hidden="true"></div>
+
+        <p class="h-desc reveal">
+            Embedded systems engineer and co-founder of Zorift.<br>
+            Building hardware-software architectures â€” from BLE firmware<br>to computer vision pipelines.
+        </p>
+
+        <div class="h-actions reveal">
+            <a href="#projects" class="btn btn-solid" aria-label="View selected work">View Work â†’</a>
+            <a href="#contact" class="btn btn-ghost" aria-label="Get in touch">Get in Touch</a>
+        </div>
+
+        <div class="h-pills reveal" aria-label="Core disciplines">
+            <span class="h-pill"><i class="fas fa-microchip" aria-hidden="true"></i> ESP32 &amp; BLE</span>
+            <span class="h-pill"><i class="fas fa-eye" aria-hidden="true"></i> Computer Vision</span>
+            <span class="h-pill"><i class="fas fa-server" aria-hidden="true"></i> Edge IoT</span>
+        </div>
+
+        <div class="h-socials reveal" aria-label="Social links">
+            <a href="https://github.com/FIDHULofficial" target="_blank" rel="noopener" class="h-social-a" aria-label="GitHub">
+                <i class="fab fa-github"></i><span>FIDHULofficial</span>
+            </a>
+            <a href="https://youtube.com/@fidhul_offcial" target="_blank" rel="noopener" class="h-social-a" aria-label="YouTube">
+                <i class="fab fa-youtube"></i><span>fidhul_offcial</span>
+            </a>
+            <a href="https://www.instagram.com/FIDHUL_KRISHNA/" target="_blank" rel="noopener" class="h-social-a" aria-label="Instagram">
+                <i class="fab fa-instagram"></i><span>FIDHUL_KRISHNA</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Scroll hint -->
+    <div class="h-scroll-hint" aria-hidden="true">
+        <span>Scroll</span>
+        <span class="h-scroll-line"></span>
+    </div>
+
+    <!-- Hidden for JS compat -->
+    <div class="hero-card-wrap" aria-hidden="true">
+        <div class="sys-card glass-card card">
+            <div class="sys-avatar-wrap" id="sysAvatar"></div>
+            <div class="sys-row"><span class="sys-key">repos</span><span class="sys-sep">:</span><span class="sys-val gold" id="sysRepos">â€”</span></div>
+        </div>
+    </div>
+</section>
+
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• CHIP MARQUEE â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<div class="chip-marquee-section" aria-hidden="true">
+    <div class="chip-marquee-row">
+        <div class="chip-track">
+            <div class="chip-card"><i class="fas fa-microchip"></i> ESP32 Firmware</div>
+            <div class="chip-card"><i class="fas fa-broadcast-tower"></i> BLE / NimBLE</div>
+            <div class="chip-card"><i class="fas fa-eye"></i> Computer Vision</div>
+            <div class="chip-card"><i class="fas fa-robot"></i> Robotics</div>
+            <div class="chip-card"><i class="fas fa-wave-square"></i> Sensor Fusion</div>
+            <div class="chip-card"><i class="fas fa-wifi"></i> MQTT &amp; IoT</div>
+            <div class="chip-card"><i class="fas fa-gamepad"></i> HID Gamepad</div>
+            <div class="chip-card"><i class="fas fa-code"></i> Python / C++</div>
+            <div class="chip-card"><i class="fas fa-bolt"></i> ESP-NOW Mesh</div>
+            <div class="chip-card"><i class="fas fa-server"></i> Edge Computing</div>
+            <!-- duplicate for loop -->
+            <div class="chip-card"><i class="fas fa-microchip"></i> ESP32 Firmware</div>
+            <div class="chip-card"><i class="fas fa-broadcast-tower"></i> BLE / NimBLE</div>
+            <div class="chip-card"><i class="fas fa-eye"></i> Computer Vision</div>
+            <div class="chip-card"><i class="fas fa-robot"></i> Robotics</div>
+            <div class="chip-card"><i class="fas fa-wave-square"></i> Sensor Fusion</div>
+            <div class="chip-card"><i class="fas fa-wifi"></i> MQTT &amp; IoT</div>
+            <div class="chip-card"><i class="fas fa-gamepad"></i> HID Gamepad</div>
+            <div class="chip-card"><i class="fas fa-code"></i> Python / C++</div>
+            <div class="chip-card"><i class="fas fa-bolt"></i> ESP-NOW Mesh</div>
+            <div class="chip-card"><i class="fas fa-server"></i> Edge Computing</div>
+        </div>
+    </div>
+    <div class="chip-marquee-row">
+        <div class="chip-track chip-track--reverse">
+            <div class="chip-card"><i class="fas fa-solar-panel"></i> Solar-Powered IoT</div>
+            <div class="chip-card"><i class="fab fa-github"></i> Open Source</div>
+            <div class="chip-card"><i class="fas fa-mobile-alt"></i> Android Server</div>
+            <div class="chip-card"><i class="fas fa-layer-group"></i> MediaPipe</div>
+            <div class="chip-card"><i class="fas fa-lock"></i> Cloudflare Tunnel</div>
+            <div class="chip-card"><i class="fas fa-graduation-cap"></i> IoT Teaching</div>
+            <div class="chip-card"><i class="fas fa-camera"></i> OpenCV</div>
+            <div class="chip-card"><i class="fas fa-network-wired"></i> UART / I2C / SPI</div>
+            <div class="chip-card"><i class="fas fa-database"></i> MariaDB / Nginx</div>
+            <div class="chip-card"><i class="fas fa-sitemap"></i> Zorift Co-founder</div>
+            <!-- duplicate -->
+            <div class="chip-card"><i class="fas fa-solar-panel"></i> Solar-Powered IoT</div>
+            <div class="chip-card"><i class="fab fa-github"></i> Open Source</div>
+            <div class="chip-card"><i class="fas fa-mobile-alt"></i> Android Server</div>
+            <div class="chip-card"><i class="fas fa-layer-group"></i> MediaPipe</div>
+            <div class="chip-card"><i class="fas fa-lock"></i> Cloudflare Tunnel</div>
+            <div class="chip-card"><i class="fas fa-graduation-cap"></i> IoT Teaching</div>
+            <div class="chip-card"><i class="fas fa-camera"></i> OpenCV</div>
+            <div class="chip-card"><i class="fas fa-network-wired"></i> UART / I2C / SPI</div>
+            <div class="chip-card"><i class="fas fa-database"></i> MariaDB / Nginx</div>
+            <div class="chip-card"><i class="fas fa-sitemap"></i> Zorift Co-founder</div>
+        </div>
+    </div>
+</div>
+
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• ABOUT â€” BENTO â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<section class="s-about s-section" id="about" aria-labelledby="about-h">
+    <div class="wrap">
+        <div class="bento">
+
+            <!-- Bio â€” large left card -->
+            <div class="b-bio card reveal" aria-label="Bio">
+                <div class="b-bio-head">
+                    <div id="sysAvatar" class="sys-avatar-wrap" aria-hidden="true"></div>
+                    <div>
+                        <p class="b-role">Embedded Systems Engineer</p>
+                        <p class="b-org">Zorift Â· Co-founder</p>
+                    </div>
+                </div>
+                <h2 class="b-heading" id="about-h">Engineer by discipline.<br>Builder by instinct.</h2>
+                <p class="b-text">Fidhul Krishna is an embedded systems engineer based in Kerala, India, specialising in IoT firmware development, BLE protocol design, and hardware-software co-design. He approaches technical problems at the intersection of circuit design and systems thinking â€” building devices that work reliably in real-world conditions, not just on a bench.</p>
+                <p class="b-text">In 2024, Fidhul co-founded <strong>Zorift</strong> alongside Yadhusnav â€” a technology venture developing connected products within the KSUM startup ecosystem. Beyond building systems, he actively teaches IoT and embedded programming, maintaining a presence on <a href="https://youtube.com/@fidhul_offcial" target="_blank" rel="noopener" class="inline-link"><i class="fab fa-youtube"></i> Fidhul Official</a> and <a href="https://github.com/FIDHULofficial" target="_blank" rel="noopener" class="inline-link"><i class="fab fa-github"></i> GitHub</a>.</p>
+            </div>
+
+            <!-- Stats â€” right column -->
+            <div class="b-stats card reveal" aria-label="Quick stats">
+                <div class="b-stat">
+                    <span class="stat-number" data-count="8">0</span>
+                    <span class="stat-label">Projects</span>
+                </div>
+                <div class="b-stat">
+                    <span class="stat-number" data-count="4">0</span>
+                    <span class="stat-label">Deployed</span>
+                </div>
+                <div class="b-stat">
+                    <span class="stat-number stat-emoji">1st</span>
+                    <span class="stat-label">Prize</span>
+                </div>
+                <div class="b-stat">
+                    <span class="stat-number gh-followers-stat" id="ghFollowersStat">â€”</span>
+                    <span class="stat-label">GH Followers</span>
+                </div>
+            </div>
+
+            <!-- Current focus â€” full width bottom -->
+            <div class="b-focus card reveal" aria-label="Current focus">
+                <div class="b-focus-head">
+                    <span class="b-dot-pulse" aria-hidden="true"></span>
+                    <span class="b-label">Current Focus</span>
+                </div>
+                <div class="b-focus-items">
+                    <div class="b-focus-item">
+                        <span class="b-fkey">ACTIVE BUILD</span>
+                        <span class="b-fval">Mini Autonomous Desktop Robot â€” motor control &amp; proximity sensing</span>
+                    </div>
+                    <div class="b-focus-item">
+                        <span class="b-fkey">RESEARCH</span>
+                        <span class="b-fval">NimBLE 2.x HID descriptor optimisation for low-latency BLE input</span>
+                    </div>
+                    <div class="b-focus-item">
+                        <span class="b-fkey">VENTURE</span>
+                        <span class="b-fval">Zorift â€” connected product development, active build phase</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• PROJECTS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<section class="s-projects s-section s-section-alt" id="projects" aria-labelledby="projects-h">
+    <div class="wrap">
+        <div class="s-head reveal">
+            <div>
+                <span class="s-label">Selected Work</span>
+                <h2 class="s-title" id="projects-h">What I Build</h2>
+                <p class="s-sub">Hardware and software systems built for real-world deployment.</p>
+            </div>
+            <div class="p-filters" role="group" aria-label="Filter projects">
+                <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+                <button class="filter-btn" data-filter="completed" aria-pressed="false">Completed</button>
+                <button class="filter-btn" data-filter="in-progress" aria-pressed="false">In Progress</button>
+                <button class="filter-btn" data-filter="concept" aria-pressed="false">Concept</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="p-scroll-wrap" id="projectsScrollWrap">
+        <div class="p-track" id="projectsGrid">
+
+            <article class="p-card project-card card reveal" data-category="concept">
+                <div class="p-card-top"><span class="status-pill pill-concept">Concept</span></div>
+                <div class="p-icon project-icon-box"><i class="fas fa-pills"></i></div>
+                <h3 class="p-name project-name">Automated Pharmacy Dispensing System</h3>
+                <p class="p-desc project-desc">A precision mechatronic system designed to automate pharmaceutical dispensing â€” eliminating manual handling error from high-volume medication workflows.</p>
+                <div class="p-tags project-tags"><span class="tag">ESP32</span><span class="tag">Robotics</span><span class="tag">Automation</span></div>
+            </article>
+
+            <article class="p-card project-card card reveal" data-category="completed">
+                <div class="p-card-top"><span class="status-pill pill-completed">Completed</span></div>
+                <div class="p-icon project-icon-box"><i class="fas fa-mobile-alt"></i></div>
+                <h3 class="p-name project-name">Android-Based Development Server</h3>
+                <p class="p-desc project-desc">Repurposed a consumer Android device (OPPO CPH1923) into a fully-functional development server running Nginx, MariaDB, and SSH over Cloudflare Tunnel.</p>
+                <div class="p-tags project-tags"><span class="tag">Android</span><span class="tag">Linux</span><span class="tag">Nginx</span><span class="tag">SSH</span></div>
+                <a href="https://github.com/FIDHULofficial" target="_blank" rel="noopener" class="p-link project-link"><i class="fab fa-github"></i> GitHub</a>
+            </article>
+
+            <article class="p-card project-card card reveal" data-category="completed">
+                <div class="p-card-top"><span class="status-pill pill-completed">Completed</span></div>
+                <div class="p-icon project-icon-box"><i class="fas fa-hand-sparkles"></i></div>
+                <h3 class="p-name project-name">Computer Vision Gesture Interface</h3>
+                <p class="p-desc project-desc">A real-time hand tracking system using MediaPipe and OpenCV that maps palm position and pinch gestures to system mouse input â€” sub-100ms latency.</p>
+                <div class="p-tags project-tags"><span class="tag">Python</span><span class="tag">OpenCV</span><span class="tag">MediaPipe</span></div>
+                <a href="https://github.com/FIDHULofficial" target="_blank" rel="noopener" class="p-link project-link"><i class="fab fa-github"></i> GitHub</a>
+            </article>
+
+            <article class="p-card project-card card reveal" data-category="completed">
+                <div class="p-card-top"><span class="status-pill pill-completed">Completed</span></div>
+                <div class="p-icon project-icon-box"><i class="fas fa-gamepad"></i></div>
+                <h3 class="p-name project-name">RetroESP32 BLE Gamepad</h3>
+                <p class="p-desc project-desc">A custom BLE HID gamepad built on ESP32 with capacitive touch inputs, NimBLE firmware, and full RetroArch compatibility for Android TV.</p>
+                <div class="p-tags project-tags"><span class="tag">ESP32</span><span class="tag">BLE</span><span class="tag">NimBLE</span><span class="tag">HID</span></div>
+                <a href="https://github.com/FIDHULofficial" target="_blank" rel="noopener" class="p-link project-link"><i class="fab fa-github"></i> GitHub</a>
+            </article>
+
+            <article class="p-card project-card card reveal" data-category="in-progress">
+                <div class="p-card-top"><span class="status-pill pill-progress">In Progress</span></div>
+                <div class="p-icon project-icon-box"><i class="fas fa-robot"></i></div>
+                <h3 class="p-name project-name">Mini Autonomous Desktop Robot</h3>
+                <p class="p-desc project-desc">A compact autonomous robot platform for close-range task execution â€” integrating motor control, proximity sensing, and onboard compute in a desktop form factor.</p>
+                <div class="p-tags project-tags"><span class="tag">Robotics</span><span class="tag">ESP32</span><span class="tag">Hardware</span></div>
+            </article>
+
+            <article class="p-card project-card card reveal" data-category="concept">
+                <div class="p-card-top"><span class="status-pill pill-concept">Concept</span></div>
+                <div class="p-icon project-icon-box"><i class="fas fa-seedling"></i></div>
+                <h3 class="p-name project-name">Distributed IoT Agriculture System</h3>
+                <p class="p-desc project-desc">A mesh-networked sensor platform for automated cultivation management â€” multiple ESP32 nodes coordinating water, light, and nutrient delivery.</p>
+                <div class="p-tags project-tags"><span class="tag">IoT</span><span class="tag">Mesh Network</span><span class="tag">Agriculture</span></div>
+            </article>
+
+            <article class="p-card project-card card reveal" data-category="completed">
+                <div class="p-card-top"><span class="status-pill pill-completed">Completed</span></div>
+                <div class="p-icon project-icon-box"><i class="fas fa-mountain"></i></div>
+                <h3 class="p-name project-name">Environmental Disaster Prediction Station</h3>
+                <p class="p-desc project-desc">A solar-powered edge device monitoring soil moisture, water levels, and temperature deltas for landslide and seismic early-warning alerts via WiFi.</p>
+                <div class="p-tags project-tags"><span class="tag">IoT</span><span class="tag">Edge</span><span class="tag">Solar</span></div>
+            </article>
+
+            <article class="p-card project-card card reveal" data-category="concept">
+                <div class="p-card-top"><span class="status-pill pill-concept">Concept</span></div>
+                <div class="p-icon project-icon-box"><i class="fas fa-clock"></i></div>
+                <h3 class="p-name project-name">Ambient Field Awareness Wearable</h3>
+                <p class="p-desc project-desc">A wrist-mounted device passively encoding environmental sensor data (EMF, WiFi density, RF noise, BLE presence) into non-intrusive LED patterns.</p>
+                <div class="p-tags project-tags"><span class="tag">Wearable</span><span class="tag">ESP32</span><span class="tag">Sensors</span></div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• SKILLS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<section class="s-skills s-section" id="skills" aria-labelledby="skills-h">
+    <div class="wrap">
+        <div class="s-head reveal">
+            <div>
+                <span class="s-label">Tech Stack</span>
+                <h2 class="s-title" id="skills-h">Technical Stack</h2>
+                <p class="s-sub">Tools, protocols, and platforms used in real production builds.</p>
+            </div>
+        </div>
+        <div class="skills-groups">
+            <div class="card sk-group reveal">
+                <div class="sk-head sgc-header">
+                    <div class="sk-icon sgc-icon"><i class="fas fa-microchip"></i></div>
+                    <p class="sk-label skill-group-label">Firmware &amp; Hardware</p>
+                </div>
+                <div class="chips-grid">
+                    <span class="chip">ESP32</span><span class="chip">Arduino</span><span class="chip">BLE / NimBLE</span>
+                    <span class="chip">ESP-NOW</span><span class="chip">MPU6050</span><span class="chip">Sensor Fusion</span>
+                    <span class="chip">PWM Control</span><span class="chip">UART / I2C / SPI</span>
+                </div>
+            </div>
+            <div class="card sk-group reveal">
+                <div class="sk-head sgc-header">
+                    <div class="sk-icon sgc-icon"><i class="fas fa-code"></i></div>
+                    <p class="sk-label skill-group-label">Software &amp; Languages</p>
+                </div>
+                <div class="chips-grid">
+                    <span class="chip">Python</span><span class="chip">C / C++</span><span class="chip">JavaScript</span>
+                    <span class="chip">HTML / CSS</span><span class="chip">OpenCV</span><span class="chip">MediaPipe</span>
+                    <span class="chip">Blynk IoT</span><span class="chip">MQTT</span>
+                </div>
+            </div>
+            <div class="card sk-group reveal">
+                <div class="sk-head sgc-header">
+                    <div class="sk-icon sgc-icon"><i class="fas fa-server"></i></div>
+                    <p class="sk-label skill-group-label">Platforms &amp; Tools</p>
+                </div>
+                <div class="chips-grid">
+                    <span class="chip">Android (Termux)</span><span class="chip">Nginx</span><span class="chip">MariaDB</span>
+                    <span class="chip">RetroArch</span><span class="chip">Cloudflare Tunnel</span><span class="chip">Tailscale</span>
+                    <span class="chip">Git</span><span class="chip">Linux</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• TIMELINE â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<section class="s-timeline s-section s-section-alt" id="timeline" aria-labelledby="tl-h">
+    <div class="wrap">
+        <div class="s-head reveal">
+            <div>
+                <span class="s-label">Timeline</span>
+                <h2 class="s-title" id="tl-h">Commit Log</h2>
+                <p class="s-sub">A chronological record of builds, deployments, and milestones.</p>
+            </div>
+        </div>
+        <div class="timeline-list">
+
+            <div class="tl-item reveal">
+                <div class="tl-marker" aria-hidden="true"><span class="tl-dot"></span><span class="tl-line"></span></div>
+                <div class="tl-body glass-card card">
+                    <div class="tl-meta"><span class="tl-year">2025</span><span class="tl-badge badge-gold">MILESTONE</span></div>
+                    <h3 class="tl-title">Sparkathon 25 â€” First Place</h3>
+                    <p class="tl-desc">Awarded first position for demonstrated technical innovation. Recognised for applied engineering and product thinking by the judging panel.</p>
+                    <div class="tl-tags"><span class="tag">IoT</span><span class="tag">Innovation</span><span class="tag">Award</span></div>
+                </div>
+            </div>
+
+            <div class="tl-item reveal">
+                <div class="tl-marker" aria-hidden="true"><span class="tl-dot"></span><span class="tl-line"></span></div>
+                <div class="tl-body glass-card card">
+                    <div class="tl-meta"><span class="tl-year">2025</span><span class="tl-badge badge-chalk">DEPLOY</span></div>
+                    <h3 class="tl-title">RetroESP32 BLE Gamepad â€” Shipped</h3>
+                    <p class="tl-desc">Custom BLE HID gamepad on ESP32 with capacitive inputs and full RetroArch compatibility. Completed NimBLE 2.x API migration and HID descriptor debugging.</p>
+                    <div class="tl-tags"><span class="tag">ESP32</span><span class="tag">BLE</span><span class="tag">NimBLE</span></div>
+                    <a href="https://github.com/FIDHULofficial" target="_blank" rel="noopener" class="tl-link"><i class="fab fa-github"></i> View on GitHub</a>
+                </div>
+            </div>
+
+            <div class="tl-item reveal">
+                <div class="tl-marker" aria-hidden="true"><span class="tl-dot"></span><span class="tl-line"></span></div>
+                <div class="tl-body glass-card card">
+                    <div class="tl-meta"><span class="tl-year">2024</span><span class="tl-badge badge-gold">FOUNDED</span></div>
+                    <h3 class="tl-title">Co-founded Zorift</h3>
+                    <p class="tl-desc">Launched technology venture with Yadhusnav, focused on connected hardware products and technical education programs within the KSUM ecosystem.</p>
+                    <div class="tl-tags"><span class="tag">Startup</span><span class="tag">Hardware</span><span class="tag">EdTech</span></div>
+                </div>
+            </div>
+
+            <div class="tl-item reveal">
+                <div class="tl-marker" aria-hidden="true"><span class="tl-dot"></span><span class="tl-line"></span></div>
+                <div class="tl-body glass-card card">
+                    <div class="tl-meta"><span class="tl-year">2024</span><span class="tl-badge badge-chalk">DEPLOY</span></div>
+                    <h3 class="tl-title">Environmental Disaster Prediction Station</h3>
+                    <p class="tl-desc">Solar-powered edge device monitoring soil moisture, water levels, and temperature deltas for landslide and seismic early-warning alerts via WiFi.</p>
+                    <div class="tl-tags"><span class="tag">IoT</span><span class="tag">Solar</span><span class="tag">Edge</span></div>
+                </div>
+            </div>
+
+            <div class="tl-item reveal">
+                <div class="tl-marker" aria-hidden="true"><span class="tl-dot"></span><span class="tl-line"></span></div>
+                <div class="tl-body glass-card card">
+                    <div class="tl-meta"><span class="tl-year">2024</span><span class="tl-badge badge-chalk">DEPLOY</span></div>
+                    <h3 class="tl-title">Computer Vision Gesture Interface</h3>
+                    <p class="tl-desc">Real-time MediaPipe + OpenCV pipeline mapping palm position to system mouse input. Sub-100ms latency. Demonstrated at school exhibition.</p>
+                    <div class="tl-tags"><span class="tag">Python</span><span class="tag">OpenCV</span><span class="tag">MediaPipe</span></div>
+                    <a href="https://github.com/FIDHULofficial" target="_blank" rel="noopener" class="tl-link"><i class="fab fa-github"></i> View on GitHub</a>
+                </div>
+            </div>
+
+            <div class="tl-item reveal">
+                <div class="tl-marker" aria-hidden="true"><span class="tl-dot"></span></div>
+                <div class="tl-body glass-card card">
+                    <div class="tl-meta"><span class="tl-year">2023</span><span class="tl-badge badge-chalk">DEPLOY</span></div>
+                    <h3 class="tl-title">Android-Based Development Server</h3>
+                    <p class="tl-desc">Repurposed OPPO CPH1923 into a production server running Nginx, MariaDB, and SSH over Cloudflare Tunnel â€” zero dedicated hardware required.</p>
+                    <div class="tl-tags"><span class="tag">Android</span><span class="tag">Linux</span><span class="tag">Nginx</span></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• RECOGNITION â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<section class="s-achiev s-section" id="achievements" aria-labelledby="achiev-h">
+    <div class="wrap">
+        <div class="s-head reveal">
+            <div>
+                <span class="s-label">Recognition</span>
+                <h2 class="s-title" id="achiev-h">Recognition</h2>
+            </div>
+        </div>
+        <div class="achievements-grid">
+            <div class="card achievement-card feat-card reveal">
+                <span class="ach-number" aria-hidden="true">01</span>
+                <div class="ach-content">
+                    <div class="ach-badge">ðŸ†</div>
+                    <h3>Sparkathon 25 â€” First Place</h3>
+                    <p>Awarded first position at Sparkathon for demonstrated technical innovation. Recognised for applied engineering and product thinking.</p>
+                </div>
+            </div>
+            <div class="card achievement-card reveal">
+                <span class="ach-number" aria-hidden="true">02</span>
+                <div class="ach-badge">ðŸ”¬</div>
+                <h3>Science &amp; Technology Exhibitions</h3>
+                <p>Selected to present hardware and IoT projects at multiple regional science and technology exhibitions, reviewed by industry professionals.</p>
+            </div>
+            <div class="card achievement-card reveal">
+                <span class="ach-number" aria-hidden="true">03</span>
+                <div class="ach-badge">ðŸ“º</div>
+                <h3>Fidhul Official â€” YouTube</h3>
+                <p>An ongoing technical channel documenting embedded systems builds, firmware development, and hardware engineering from prototype to deployment.</p>
+                <a href="https://youtube.com/@fidhul_offcial" target="_blank" rel="noopener" class="btn btn-ghost ach-btn"><i class="fab fa-youtube"></i> Watch Channel</a>
+            </div>
+            <div class="card achievement-card reveal">
+                <span class="ach-number" aria-hidden="true">04</span>
+                <div class="ach-badge">ðŸŽ“</div>
+                <h3>Technical Instruction</h3>
+                <p>Active instructor delivering curriculum in IoT architecture, embedded C, and device engineering through Zorift's educational programs.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• VENTURES â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<section class="s-ventures s-section s-section-alt" id="ventures" aria-labelledby="ventures-h">
+    <div class="wrap">
+        <div class="s-head reveal">
+            <div>
+                <span class="s-label">Ventures</span>
+                <h2 class="s-title" id="ventures-h">Ventures</h2>
+            </div>
+        </div>
+        <div class="card venture-card reveal">
+            <div class="venture-logo" aria-label="Zorift logo"><span>ZORIFT</span></div>
+            <div class="venture-info">
+                <span class="venture-role-badge">CO-FOUNDER&nbsp;Â·&nbsp;2024 â€“ PRESENT</span>
+                <h3 class="venture-name">ZORIFT</h3>
+                <p class="venture-desc">Zorift is a technology venture co-founded by Fidhul Krishna and Yadhusnav, focused on building connected hardware products and technical education programs. Operating within the KSUM startup ecosystem, currently in active product development.</p>
+                <p class="venture-status"><span class="venture-dot" aria-hidden="true"></span>Active â€” Product Development Phase</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• GITHUB â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<section class="s-github s-section" id="github" aria-labelledby="gh-h">
+    <div class="wrap">
+        <div class="s-head reveal">
+            <div>
+                <span class="s-label">Open Source</span>
+                <h2 class="s-title" id="gh-h">GitHub Repos</h2>
+                <p class="s-sub">Live feed â€” auto-refreshes every 24 hours. Every repo from <a href="https://github.com/FIDHULofficial" target="_blank" rel="noopener" class="inline-link"><i class="fab fa-github"></i> FIDHULofficial</a> appears here automatically.</p>
+            </div>
+        </div>
+        <div class="gh-status-bar reveal">
+            <span class="gh-dot" id="ghDot" aria-hidden="true"></span>
+            <span class="gh-status-text" id="ghStatusText">FETCHING REPOSITORIESâ€¦</span>
+            <span class="gh-cache-time" id="ghCacheTime"></span>
+        </div>
+        <div class="gh-grid" id="ghGrid" aria-label="GitHub repositories" aria-live="polite">
+            <div class="gh-skeleton card"></div>
+            <div class="gh-skeleton card"></div>
+            <div class="gh-skeleton card"></div>
+        </div>
+        <div class="gh-footer reveal">
+            <a href="https://github.com/FIDHULofficial" target="_blank" rel="noopener" class="btn btn-ghost gh-view-all">
+                <i class="fab fa-github"></i> View All on GitHub
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• YOUTUBE â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<section class="s-content s-section s-section-alt" id="content" aria-labelledby="yt-h">
+    <div class="wrap">
+        <div class="s-head reveal">
+            <div>
+                <span class="s-label">Content</span>
+                <h2 class="s-title" id="yt-h">Content Archive</h2>
+                <p class="s-sub">Technical builds, firmware deep-dives, and hardware engineering â€” documented from prototype to deployment.</p>
+            </div>
+        </div>
+        <div class="yt-showcase reveal">
+            <div class="card yt-main-card">
+                <div class="yt-logo-wrap" aria-hidden="true"><i class="fab fa-youtube yt-icon"></i></div>
+                <div class="yt-info">
+                    <span class="s-label">YouTube Channel</span>
+                    <h3 class="yt-channel-name">FIDHUL OFFICIAL</h3>
+                    <p class="yt-channel-handle">@fidhul_offcial</p>
+                    <p class="yt-channel-desc">Embedded systems builds, BLE firmware, computer vision, robotics â€” everything documented from first wire to final product. For engineers who build, not just watch.</p>
+                    <div class="yt-topics">
+                        <span class="chip">ESP32 Builds</span>
+                        <span class="chip">BLE Firmware</span>
+                        <span class="chip">Computer Vision</span>
+                        <span class="chip">IoT Projects</span>
+                        <span class="chip">Hardware Teardowns</span>
+                    </div>
+                    <a href="https://youtube.com/@fidhul_offcial" target="_blank" rel="noopener" class="btn btn-solid yt-subscribe-btn">
+                        <i class="fab fa-youtube"></i> Subscribe
+                    </a>
+                </div>
+            </div>
+            <div class="yt-topic-grid">
+                <div class="card yt-topic-card">
+                    <div class="yt-topic-icon"><i class="fas fa-microchip"></i></div>
+                    <h4>Hardware Builds</h4>
+                    <p>Step-by-step embedded system builds from schematic to finished device.</p>
+                </div>
+                <div class="card yt-topic-card">
+                    <div class="yt-topic-icon"><i class="fas fa-code-branch"></i></div>
+                    <h4>Firmware Dev</h4>
+                    <p>BLE protocol debugging, NimBLE deep-dives, and ESP32 firmware architecture.</p>
+                </div>
+                <div class="card yt-topic-card">
+                    <div class="yt-topic-icon"><i class="fas fa-eye"></i></div>
+                    <h4>CV Pipelines</h4>
+                    <p>MediaPipe and OpenCV implementations for real-world gesture interfaces.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• SOCIAL â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<section class="s-social s-section" id="social" aria-labelledby="social-h">
+    <div class="wrap">
+        <div class="s-head reveal">
+            <div>
+                <span class="s-label">Social Presence</span>
+                <h2 class="s-title" id="social-h">Find Me Online</h2>
+            </div>
+        </div>
+        <div class="social-grid">
+            <a href="https://github.com/FIDHULofficial" target="_blank" rel="noopener" class="card social-platform-card reveal" id="social-github" aria-label="GitHub Profile">
+                <div class="spc-top"><i class="fab fa-github spc-icon"></i><span class="spc-handle">FIDHULofficial</span></div>
+                <div class="spc-stat-row">
+                    <span class="spc-stat"><i class="fas fa-code-branch"></i> <span id="ghRepoCount">â€”</span> repos</span>
+                    <span class="spc-stat"><i class="fas fa-users"></i> <span id="ghFollowerCount">â€”</span> followers</span>
+                </div>
+                <p class="spc-desc">Open source firmware, CV projects, and IoT systems. Updated continuously.</p>
+                <span class="spc-cta">VISIT PROFILE â†’</span>
+            </a>
+            <a href="https://youtube.com/@fidhul_offcial" target="_blank" rel="noopener" class="card social-platform-card reveal" id="social-youtube" aria-label="YouTube Channel">
+                <div class="spc-top"><i class="fab fa-youtube spc-icon spc-yt"></i><span class="spc-handle">@fidhul_offcial</span></div>
+                <div class="spc-stat-row">
+                    <span class="spc-stat"><i class="fas fa-play"></i> Tutorials</span>
+                    <span class="spc-stat"><i class="fas fa-wrench"></i> Build Logs</span>
+                </div>
+                <p class="spc-desc">Hardware builds, firmware dev, and computer vision projects on video.</p>
+                <span class="spc-cta">SUBSCRIBE â†’</span>
+            </a>
+            <a href="https://www.instagram.com/FIDHUL_KRISHNA/" target="_blank" rel="noopener" class="card social-platform-card reveal" id="social-instagram" aria-label="Instagram Profile">
+                <div class="spc-top"><i class="fab fa-instagram spc-icon spc-ig"></i><span class="spc-handle">FIDHUL_KRISHNA</span></div>
+                <div class="spc-stat-row">
+                    <span class="spc-stat"><i class="fas fa-image"></i> Project Photos</span>
+                    <span class="spc-stat"><i class="fas fa-bolt"></i> Build Reels</span>
+                </div>
+                <p class="spc-desc">Behind-the-scenes hardware photos, lab setups, and build reels.</p>
+                <span class="spc-cta">FOLLOW â†’</span>
+            </a>
+            <a href="https://linkedin.com/in/fidhul-krishna" target="_blank" rel="noopener" class="card social-platform-card reveal" id="social-linkedin" aria-label="LinkedIn Profile">
+                <div class="spc-top"><i class="fab fa-linkedin spc-icon spc-li"></i><span class="spc-handle">fidhul-krishna</span></div>
+                <div class="spc-stat-row">
+                    <span class="spc-stat"><i class="fas fa-briefcase"></i> Professional</span>
+                    <span class="spc-stat"><i class="fas fa-handshake"></i> Collaborations</span>
+                </div>
+                <p class="spc-desc">Professional profile â€” open to collaborations, consulting, and technical roles.</p>
+                <span class="spc-cta">CONNECT â†’</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• CTA BAND â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<section class="cta-band" aria-label="Call to action">
+    <div class="wrap">
+        <div class="cta-inner reveal">
+            <div class="cta-text">
+                <span class="s-label">Open to Work</span>
+                <h2 class="cta-title">Ready to build<br>something real?</h2>
+                <p class="cta-sub">Firmware, CV pipelines, IoT systems, or a hardware prototype â€” let's build something that works.</p>
+            </div>
+            <a href="mailto:fidhulkrishna@gmail.com" class="btn btn-solid cta-btn">fidhulkrishna@gmail.com&nbsp;â†’</a>
+        </div>
+    </div>
+</section>
+
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• CONTACT â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<section class="s-contact s-section" id="contact" aria-labelledby="contact-h">
+    <div class="wrap">
+        <div class="s-head reveal">
+            <div>
+                <span class="s-label">Contact</span>
+                <h2 class="s-title" id="contact-h">Contact</h2>
+                <p class="s-sub">Available for collaboration, consulting, and technical conversations.</p>
+            </div>
+        </div>
+        <div class="contact-grid">
+            <a href="mailto:fidhulkrishna@gmail.com" class="card contact-card reveal" id="contact-email" aria-label="Email">
+                <div class="contact-icon-box"><i class="fas fa-envelope"></i></div>
+                <h3>Email</h3>
+                <p>fidhulkrishna@gmail.com</p>
+            </a>
+            <a href="https://github.com/FIDHULofficial" target="_blank" rel="noopener" class="card contact-card reveal" id="contact-github" aria-label="GitHub">
+                <div class="contact-icon-box"><i class="fab fa-github"></i></div>
+                <h3>GitHub</h3>
+                <p>FIDHULofficial</p>
+            </a>
+            <a href="https://youtube.com/@fidhul_offcial" target="_blank" rel="noopener" class="card contact-card reveal" id="contact-youtube" aria-label="YouTube">
+                <div class="contact-icon-box"><i class="fab fa-youtube"></i></div>
+                <h3>YouTube</h3>
+                <p>fidhul_offcial</p>
+            </a>
+            <a href="https://www.instagram.com/FIDHUL_KRISHNA/" target="_blank" rel="noopener" class="card contact-card reveal" id="contact-instagram" aria-label="Instagram">
+                <div class="contact-icon-box"><i class="fab fa-instagram"></i></div>
+                <h3>Instagram</h3>
+                <p>FIDHUL_KRISHNA</p>
+            </a>
+            <a href="https://linkedin.com/in/fidhul-krishna" target="_blank" rel="noopener" class="card contact-card reveal" id="contact-linkedin" aria-label="LinkedIn">
+                <div class="contact-icon-box"><i class="fab fa-linkedin"></i></div>
+                <h3>LinkedIn</h3>
+                <p>fidhul-krishna</p>
+            </a>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• FOOTER â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<footer class="footer" role="contentinfo">
+    <div class="wrap footer-inner">
+        <a href="#hero" class="footer-logo" aria-label="Back to top">&lt;FK/&gt;</a>
+        <p class="footer-copy">Â© 2026 FIDHUL KRISHNA â€” ALL SYSTEMS OPERATIONAL</p>
+        <div class="footer-socials">
+            <a href="https://github.com/FIDHULofficial" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://youtube.com/@fidhul_offcial" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/FIDHUL_KRISHNA/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com/in/fidhul-krishna" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:fidhulkrishna@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+    </div>
+</footer>
+
+<script src="sound.js"></script>
+<script src="script.js"></script>
+
+<!-- Drag-to-scroll for projects -->
+<script>
+(function(){
+    const wrap = document.getElementById('projectsScrollWrap');
+    if(!wrap) return;
+    let isDown=false, startX, scrollLeft;
+    wrap.addEventListener('mousedown', e=>{isDown=true; wrap.classList.add('active'); startX=e.pageX-wrap.offsetLeft; scrollLeft=wrap.scrollLeft;});
+    wrap.addEventListener('mouseleave',()=>{isDown=false; wrap.classList.remove('active');});
+    wrap.addEventListener('mouseup',()=>{isDown=false; wrap.classList.remove('active');});
+    wrap.addEventListener('mousemove',e=>{if(!isDown)return; e.preventDefault(); const x=e.pageX-wrap.offsetLeft; const walk=(x-startX)*1.5; wrap.scrollLeft=scrollLeft-walk;});
+})();
+</script>
+
+</body>
+</html>
